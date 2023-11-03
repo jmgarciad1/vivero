@@ -32,6 +32,16 @@ describe('BookListComponent', () => {
         faker.lorem.sentence(),
         faker.lorem.sentence()
       ),
+      new Planta(
+        faker.lorem.sentence(),
+        faker.lorem.sentence(),
+        faker.lorem.sentence()
+      ),
+      new Planta(
+        faker.lorem.sentence(),
+        faker.lorem.sentence(),
+        faker.lorem.sentence()
+      ),
     ];
 
     fixture.detectChanges();
