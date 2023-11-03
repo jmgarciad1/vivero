@@ -1,18 +1,18 @@
 <div class="container-fluid">
-  <div class="col-6">
+  <div class="col-8">
     <table class="table">
-      <thead>
+      <thead class="bg-dark">
         <tr>
-          <th class="h4">#</th>
-          <th class="h4">Nombre común</th>
-          <th class="h4">Tipo</th>
-          <th class="h4">Clima</th>
+          <th class="bg-dark text-white col-1">#</th>
+          <th class="bg-dark text-white col-3">Nombre común</th>
+          <th class="bg-dark text-white col-2">Tipo</th>
+          <th class="bg-dark text-white col-2">Clima</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let p of plantas; let i = index">
           <td>
-            <dd>{{ i+1 }}</dd>
+            <dd>{{ i + 1 }}</dd>
           </td>
           <td>
             <dd>{{ p.nombre_comun }}</dd>
@@ -24,7 +24,9 @@
             <dd>{{ p.clima }}</dd>
           </td>
         </tr>
-      </tbody>
+      </tbody>      
     </table>
+    <p>Total plantas de interior: {{ plantasInterior }}</p>
+    <p>Total plantas de exterior: {{ plantasExterior }}</p>
   </div>
 </div>
